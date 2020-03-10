@@ -8,7 +8,7 @@ var password = "zaq1@WSX"
 client.on("ready", () => {
   console.log("Siema działamy");
 });
-client.login("NjY0NTIzNTQ1MjE2Mjg2NzQx.XlKxoQ.cXsXkHhbP4s5YW4BxSOhOh5p-So");
+client.login("Your token");
 client.on("message", message => {
   if (message.content.startsWith("!noclass")) {
     let args = message.content.split(" ").slice(1);
