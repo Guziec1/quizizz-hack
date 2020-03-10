@@ -41,7 +41,7 @@ client.on("message", message => {
                       answer = cheerio.load(el.structure.options[answer].text);
                       let embed = new discord.RichEmbed()
                         .setDescription(
-                          `Pytanie: ${$.text()} \n \n Odpowiedź: ${answer.text()}`
+                          `Question: ${$.text()} \n \n Answer: ${answer.text()}`
                         )
                         .setImage(media);
 
@@ -110,7 +110,7 @@ client.on("message", message => {
 
                       let embed = new discord.RichEmbed()
                         .setDescription(
-                          `Pytanie: ${$.text()} \n \n Odpowiedź: ${answer.text()}`
+                          `Question: ${$.text()} \n \n Answer: ${answer.text()}`
                         )
                         .setImage(media);
 
