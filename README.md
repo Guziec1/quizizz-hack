@@ -8,3 +8,6 @@ It works as a discord bot, there are 2 commands to use: <br>
 !class [code to the game] -> use when the game is reserved to class only<br>
 !noclass [code to the game] -> use when the game is open for anyone<br>
 After use of the command within 5-10 seconds bot should respond with list of questions and answers<br>
+# Bugs <br>
+If you find any bugs please let me know via issue on github.<br>
+Im also open for pull requests.
