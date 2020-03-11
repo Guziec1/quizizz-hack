@@ -4,11 +4,12 @@ const discord = require("discord.js");
 const client = new discord.Client();
 const cheerio = require("cheerio");
 var email = "grc56vrs9d@cloud-mail.top";
-var password = "zaq1@WSX"
+var password = "zaq1@WSX";
+var token = "Your token"
 client.on("ready", () => {
   console.log("Siema działamy");
 });
-client.login("Your token");
+client.login(token);
 client.on("message", message => {
   if (message.content.startsWith("!noclass")) {
     let args = message.content.split(" ").slice(1);
