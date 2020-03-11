@@ -3,9 +3,9 @@ const axios = require("axios");
 const discord = require("discord.js");
 const client = new discord.Client();
 const cheerio = require("cheerio");
-var email = "grc56vrs9d@cloud-mail.top";
+var email = "sodj7w9kym@montokop.pw";
 var password = "zaq1@WSX";
-var token = "Your token"
+var token = "your token"
 client.on("ready", () => {
   console.log("Siema działamy");
 });
@@ -137,7 +137,6 @@ client.on("message", message => {
       await page.waitForSelector(".accept-invite-btn");
       await page.click(".accept-invite-btn");
       await page.waitForSelector(".start-game");
-      await page.click(".start-game");
       console.log(`joined!`);
       await page.close();
       await browser.close();
