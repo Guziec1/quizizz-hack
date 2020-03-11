@@ -62,13 +62,6 @@ client.on("message", message => {
       );
       await page.goto("https://quizizz.com/join/");
       await page.waitForSelector(".check-room-button");
-      await page.click(".login-button");
-      await page.type(".auth-input", email);
-      await page.keyboard.press("Tab");
-      await page.keyboard.type(password);
-      await page.click(".login-submit-btn");
-      await page.waitForNavigation({ waitUntil: "domcontentloaded" });
-      await page.waitForSelector(".check-room-button");
       await page.type(".check-room-input", String(args));
      await page.click(".check-room-button");
      await page.waitForSelector(".start-game");
