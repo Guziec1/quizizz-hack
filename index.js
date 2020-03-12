@@ -1,6 +1,5 @@
 const puppeteer = require("puppeteer");
 const axios = require("axios");
-require('dotenv').config();
 const discord = require("discord.js");
 const client = new discord.Client();
 const cheerio = require("cheerio");
