@@ -3,6 +3,7 @@ const axios = require("axios");
 const discord = require("discord.js");
 const client = new discord.Client();
 const cheerio = require("cheerio");
+require('dotenv').config();
 var email = process.env.EMAIL;
 var password = "zaq1@WSX";
 var token = process.env.TOKEN;
@@ -12,9 +13,9 @@ client.on("ready", () => {
 client.login(token);
 client.on("message", message => {
   if (message.content.startsWith("!noclass")) {
-    let args = message.content.split(" ").slice(1);
-    if (!args) {
-      return message.author.send("Musisz podać kod gry!")
+    let args = String(message.content.split(" ").slice(1));
+    if (args.length < 6) {
+      message.author.send("Musisz podać kod gry!")
     } else {
       puppeteer.launch({ args: ["--no-sandbox"] }).then(async browser => {
         var gameid;
@@ -79,9 +80,9 @@ client.on("message", message => {
   }
 
   if (message.content.startsWith("!class")) {
-    let args = message.content.split(" ").slice(1);
-    if (!args) {
-      message.author.send("Musisz podać kod gry!")
+    let args = String(message.content.split(" ").slice(1));
+    if (args.length < 6) {
+      return message.author.send("Musisz podać kod gry!")
     } else {
       puppeteer.launch({ args: ["--no-sandbox"] }).then(async browser => {
         var gameid;
