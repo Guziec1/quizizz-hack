@@ -5,7 +5,7 @@ const client = new discord.Client();
 const cheerio = require("cheerio");
 var email = "sodj7w9kym@montokop.pw";
 var password = "zaq1@WSX";
-var token = "your token"
+var token = process.env.token;
 client.on("ready", () => {
   console.log("Siema działamy");
 });
