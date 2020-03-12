@@ -1,10 +1,10 @@
 {
   "name": "quiz",
   "version": "1.0.0",
-  "description": "",
+  "description": "Aplikacja taka sobie o",
   "main": "index.js",
   "scripts": {
-    "start":"node index.js"
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
@@ -12,6 +12,7 @@
     "axios": "^0.19.2",
     "cheerio": "^1.0.0-rc.3",
     "discord.js": "^11.5.1",
-    "puppeteer": "^2.1.1"
+    "puppeteer": "^2.1.1",
+    "dotenv": "^8.2.0"
   }
 }
