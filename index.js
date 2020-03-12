@@ -1,11 +1,12 @@
 const puppeteer = require("puppeteer");
 const axios = require("axios");
+require('dotenv').config();
 const discord = require("discord.js");
 const client = new discord.Client();
 const cheerio = require("cheerio");
-var email = "sodj7w9kym@montokop.pw";
+var email = process.env.EMAIL;
 var password = "zaq1@WSX";
-var token = process.env.token;
+var token = process.env.TOKEN;
 client.on("ready", () => {
   console.log("Siema działamy");
 });
