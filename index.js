@@ -65,7 +65,14 @@ client.on("message", message => {
         await page.setUserAgent(
           "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.130 Safari/537.36"
         );
-        await page.goto("https://quizizz.com/join/");
+         await page.goto("https://quizizz.com/join/");
+        await page.waitForSelector(".check-room-button");
+        await page.click(".login-button");
+        await page.type(".auth-input", email);
+        await page.keyboard.press("Tab");
+        await page.keyboard.type(password);
+        await page.click(".login-submit-btn");
+        await page.waitForNavigation({ waitUntil: "domcontentloaded" });
         await page.waitForSelector(".check-room-button");
         await page.type(".check-room-input", String(args));
         await page.click(".check-room-button");
