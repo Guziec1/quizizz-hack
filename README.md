@@ -1,6 +1,6 @@
 # quizizz-hack <br>
 # How to use<br>
-Put email and password of an existing account on quizizz inside index.js<br>
+Put email and password of an existing account on quizizz inside index.js (email="your email", token = "ur token" , password = "your password")<br>
 Put your discord bot token inside index.js<br>
 Remember to change accounts on quizizz as often as you can (teachers bans and some other issues connected to quizizz).<br>
 # How does it work?<br>
